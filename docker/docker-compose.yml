@@ -12,6 +12,8 @@ services:
       DDNS_DOMAIN: dyn.mitsecurity.lan
       DDNS_SOA_DOMAIN: ddns.mitsecurity.lan
       DDNS_REDIS_HOST: redis:6379
+    ports:
+      - "8081:8080"
 
   powerdns:
     restart: unless-stopped
