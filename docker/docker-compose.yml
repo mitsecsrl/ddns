@@ -24,6 +24,8 @@ services:
       - ddns
     environment:
       PDNS_REMOTE_HTTP_HOST: "ddns:8053"
+    ports:
+      - "5353:53/udp"
 
   redis:
     restart: unless-stopped
