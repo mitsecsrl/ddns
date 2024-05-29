@@ -9,8 +9,8 @@ services:
     depends_on:
       - redis
     environment:
-      DDNS_DOMAIN: ddns.mitsecurity.lan
-      DDNS_SOA_DOMAIN: dyn.mitsecurity.lan
+      DDNS_DOMAIN: dyn.mitsecurity.lan
+      DDNS_SOA_DOMAIN: ddns.mitsecurity.lan
       DDNS_REDIS_HOST: redis:6379
     ports:
       - "8081:8080"
